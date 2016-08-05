@@ -7,12 +7,12 @@ title: Hexo
 subtitle:
 #description:
 #author: John Doe
-language: en
+language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.zhangcheng.club
+url: http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -83,7 +83,3 @@ deploy:
   # repository: http://github.com/zhangchengtest/blog.git
   repository: https://github.com/zhangchengtest/zhangchengtest.github.io.git
   branch: master
-
-search:
-  path: search.xml
-  field: post

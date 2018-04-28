@@ -13,3 +13,5 @@ set testq 0 0 8
 然后enter 换行
 再输入
 zhangsan
+启动的命令
+memcacheq -d -r -u nobody -H /data/memcacheq -N -R -v -L 1024 -B 2048 &> /var/log/mq_error.log

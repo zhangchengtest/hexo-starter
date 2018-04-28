@@ -32,3 +32,8 @@ $ cd /etc/init.d
 $ ./php-fpm start
 ```
 
+2.源码安装
+更加好升级
+
+
+

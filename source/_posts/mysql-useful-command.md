@@ -34,3 +34,26 @@ $ UPDATE mysql.proc set `definer`= 'xxxx' where `definer` = 'xxxxx'
  
 ```
 
+添加索引
+聚合索引 要注意字段间的先后关系
+
+```bash
+alter table partner add index
+partner_index_id_type(partner_restaurant_id, partner_type);
+
+drop index partner_index_id_type on partner;
+
+
+```
+
+time_format用法
+ 
+
+```
+select * from `table_name` 
+  where date_format(create_date ,'%Y-%m-%d') > '2017-08-10' 
+
+select * from `table_name` 
+  where create_date >  date_format('2017-08-10 00:00:00','%Y-%m -%d %H:%i:%s')
+
+```

@@ -49,3 +49,88 @@ tags:
                     </plugin>
 ```
 
+```
+	
+		<!-- swagger-springmvc -->
+    <dependency>
+        <groupId>com.mangofactory</groupId>
+        <artifactId>swagger-springmvc</artifactId>
+        <version>1.0.2</version>
+    </dependency>
+    <dependency>
+        <groupId>com.mangofactory</groupId>
+        <artifactId>swagger-models</artifactId>
+        <version>1.0.2</version>
+    </dependency>
+    <dependency>
+        <groupId>com.wordnik</groupId>
+        <artifactId>swagger-annotations</artifactId>
+        <version>1.3.11</version>
+    </dependency>
+
+
+
+```
+
+```
+
+package com.aurfy.haze.web.spring;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+
+import com.mangofactory.swagger.configuration.SpringSwaggerConfig;
+import com.mangofactory.swagger.models.dto.ApiInfo;
+import com.mangofactory.swagger.plugin.SwaggerSpringMvcPlugin;
+
+/**
+ * 
+ * @author zhangcheng
+ *
+ */
+public class SwaggerConfig extends WebConfigTemplate{
+
+    private SpringSwaggerConfig springSwaggerConfig;
+
+    /**
+     * Required to autowire SpringSwaggerConfig
+     */
+    @Autowired
+    public void setSpringSwaggerConfig(SpringSwaggerConfig springSwaggerConfig)
+    {
+        this.springSwaggerConfig = springSwaggerConfig;
+    }
+
+    /**
+     * Every SwaggerSpringMvcPlugin bean is picked up by the swagger-mvc
+     * framework - allowing for multiple swagger groups i.e. same code base
+     * multiple swagger resource listings.
+     */
+    @Bean
+    public SwaggerSpringMvcPlugin customImplementation()
+    {
+        return new SwaggerSpringMvcPlugin(this.springSwaggerConfig)
+                .apiInfo(apiInfo())
+                .includePatterns(".*?");
+    }
+
+    private ApiInfo apiInfo()
+    {
+        ApiInfo apiInfo = new ApiInfo(
+                "My Apps API Title",
+                "My Apps API Description",
+                "My Apps API terms of service",
+                "My Apps API Contact Email",
+                "My Apps API Licence Type",
+                "My Apps API License URL");
+        return apiInfo;
+    }
+    
+	@Override
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		registry.addResourceHandler("/swagger/**").addResourceLocations("/swagger/").setCachePeriod(31556926);
+	}
+}
+
+```

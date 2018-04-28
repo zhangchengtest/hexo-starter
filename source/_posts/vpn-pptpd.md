@@ -67,6 +67,34 @@ $ service iptables start
 $ service pptpd restart #重新启动 pptpd  
 ```
 
+搭建l2tp 
+能够连接ios10
+参考链接
 
+[http://blog.51yip.com/linux/1795.html](http://blog.51yip.com/linux/1795.html)
 
+xl2tp
+```bash
+[root@network ipv4]# cat /etc/xl2tpd/xl2tpd.conf  
+[global]  
+ipsec saref = no  
+  
+[lns default]  
+local ip = 192.168.10.202             //服务端IP，  
+ip range = 192.168.0.128-192.168.0.254   //客户端IP段  
+refuse chap = yes  
+refuse pap = yes  
+require authentication = yes  
+ppp debug = yes  
+pppoptfile = /etc/ppp/options.xl2tpd  
+length bit = yes  
+  
+[root@network ipv4]# /etc/init.d/xl2tpd start  //启动  
 
+```
+防火墙
+```bash
+iptables --table nat --append POSTROUTING --jump MASQUERADE  
+service iptabls save  
+
+```

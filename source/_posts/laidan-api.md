@@ -8,7 +8,7 @@ header
 ```
 authorization: Bearer 1f7a45f2f307405fa826b15dca114d61
 ```
-# 订单搜索
+# 1.订单搜索
 
 ```
 请求路径：
@@ -109,7 +109,7 @@ http://localhost:8080/appWeb/api2/order/searchByPage
 }
 ```
 
-#2.未配送搜索
+# 2.未配送搜索
 
 ```
 请求路径：
@@ -209,7 +209,7 @@ http://localhost:8080/appWeb/api2/order/searchNew
 }
 ```
 
-#3.商户搜索
+# 3.商户搜索
 
 ```
 请求路径：
@@ -247,7 +247,7 @@ http://localhost:8080/appWeb/api2/restaruant/search
 
 ```
 
-#4.分页查询
+# 4.分页查询
 
 ```
 请求路径：

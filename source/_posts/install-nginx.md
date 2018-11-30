@@ -3,7 +3,7 @@ date: 2016-05-18 19:10:34
 tags:
 ---
 title: install nginx
-tags:
+tags: nginx
 ---
 
 #yum install

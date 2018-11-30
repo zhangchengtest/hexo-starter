@@ -8,7 +8,7 @@ header
 ```
 authorization: Bearer 1f7a45f2f307405fa826b15dca114d61
 ```
-# 1.订单搜索
+# 订单搜索
 
 ```
 请求路径：
@@ -109,7 +109,7 @@ http://localhost:8080/appWeb/api2/order/searchByPage
 }
 ```
 
-# 2.未配送搜索
+# 未配送搜索
 
 ```
 请求路径：
@@ -209,7 +209,7 @@ http://localhost:8080/appWeb/api2/order/searchNew
 }
 ```
 
-# 3.商户搜索
+# 商户搜索
 
 ```
 请求路径：
@@ -247,7 +247,7 @@ http://localhost:8080/appWeb/api2/restaruant/search
 
 ```
 
-# 4.分页查询
+# 分页查询
 
 ```
 请求路径：
@@ -291,7 +291,7 @@ http://localhost:8080/appWeb/api2/restaruant/searchByPage
 
 ```
 
-# 5.发达达
+# 发达达
 
 ```
 请求路径：
@@ -303,7 +303,7 @@ http://localhost:8080/appWeb/api2/dada/resend
 返回参数：
 ```
 
-# 6.取消达达
+# 取消达达
 
 ```
 请求路径：
@@ -316,7 +316,7 @@ http://localhost:8080/appWeb/api2/dada/cancel
 
 ```
 
-# 7. 保存打印机
+# 保存打印机
 
 ```
 请求路径：

@@ -6,6 +6,7 @@ title: install nginx
 tags: nginx,linux
 ---
 
+just for test
 #yum install
 rpm -ivh http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0.el6.ngx.noarch.rpm 
 

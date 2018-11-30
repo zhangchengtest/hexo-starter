@@ -338,3 +338,20 @@ https://api.laidanl.com/api2/print_machine/save
 
 ```
 
+# 打印机列表
+
+```
+请求路径
+
+https://api.laidanl.com/api2/print_machine/search
+
+请求参数
+{
+       
+}
+
+返回参数
+
+
+```
+

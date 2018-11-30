@@ -333,10 +333,14 @@ https://api.laidanl.com/api2/print_machine/save
         
 }
 
+打印机类型
+
+YI_LIAN_YUN("易联云"), SAN_LIU_WU("365"), SAN_LIU_WU2("365_2"), FEIE("飞鹅");
 
 返回参数：
 
 ```
+
 
 # 打印机列表
 
@@ -354,4 +358,28 @@ https://api.laidanl.com/api2/print_machine/search
 
 
 ```
+# 删除打印机
 
+```
+https://api.laidanl.com/api2/print_machine/delete
+
+请求参数
+{
+
+}
+
+返回参数
+```
+
+# 打印
+
+```
+https://api.laidanl.com/api2/print_machine/print
+请求参数
+{
+
+}
+
+返回参数
+
+```

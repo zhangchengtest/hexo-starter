@@ -10,6 +10,7 @@ reference link
 
 ```
 
+就是这么任性
 yum install -y aide
 
 aide --init

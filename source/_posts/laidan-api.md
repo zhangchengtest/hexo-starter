@@ -255,7 +255,6 @@ http://localhost:8080/appWeb/api2/restaruant/save
 
 请求参数：
 {
-        "printCount":0,
         "printCountA":0,
         "printCountB":1,
         "printCountC":0,

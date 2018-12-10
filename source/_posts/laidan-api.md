@@ -290,7 +290,86 @@ http://localhost:8080/appWeb/api2/restaruant/update
 
 ```
 
-# 分页查询
+#店铺详情
+
+```
+请求路径：
+http://localhost:8080/appWeb/api2/restaruant/detail/{resturantId}
+
+
+请求参数：
+
+返回参数
+
+{
+    "data": {
+        "BAIDU": {
+            "createDate": 1470717392000,
+            "updateDate": null,
+            "tpRestaurantId": "0",
+            "restaurantId": "1003",
+            "restaurantName": "所有",
+            "managerName":"cheng",
+            "managerPhone":"15216771668",
+            "doorId": "9999",
+            "partnerRestaurantId": "1003",
+            "partnerRestaurantName": "美团胡记水果",
+            "partnerType": "MEI_TUAN",
+            "activities": "使用红包",
+            "masterAccount": "NO",
+            "accountType": "AUTO",
+            "username": "wmhjsg126054",
+            "password": "hq830319",
+            "sendSms": false,
+            "appkey": null,
+            "secret": null,
+            "accessToken": "0",
+            "refreshToken": null,
+            "parentId": null,
+            "deliveryType": "FEN_NIAO",
+            "smsTemplateName": "屌丝奶茶",
+            "brandId": "1",
+            "brandName": "屌丝奶茶",
+            "useMasterAccountSearch": "true",
+            "ownerId": "1",
+            "status": 1,
+            "printMachineId": null,
+            "partnerTypeName": "美团外卖",
+            "id": "feageggge6067b14b3bae34c83f11sss1"
+        },
+        "restaurant": {
+            "createDate": 1451442711000,
+            "updateDate": null,
+            "location": "胡记水果",
+            "latitude": 11111,
+            "longitude": 11111,
+            "ownerId": "9999",
+            "phone": "13564688428",
+            "restaurantName": "胡记水果",
+            "printMachineId": "20",
+            "status": 1,
+            "printCount": 2,
+            "printCountA": 0,
+            "printCountB": 0,
+            "printCountC": 0,
+            "printCountD": 0,
+            "qrcode": null,
+            "qrcodeName": null,
+            "delay": 0,
+            "partners": null,
+            "id": "1003"
+        }
+    },
+    "isSuccess": true,
+    "message": "success",
+    "success": true
+}
+
+
+```
+
+
+# 店铺分页查询
 
 ```
 请求路径：

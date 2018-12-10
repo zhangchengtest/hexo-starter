@@ -268,6 +268,27 @@ http://localhost:8080/appWeb/api2/restaruant/save
 
 ```
 
+#商户更新
+
+```
+请求路径：
+http://localhost:8080/appWeb/api2/restaruant/update
+
+请求参数：
+{       
+         "id":"22222",
+        "printCountA":0,
+        "printCountB":1,
+        "printCountC":0,
+        "printCountD":0,
+        "printMachineId":"293", 
+        "restaurantName":"妙生鲜-正荣店”
+}
+
+
+返回参数
+
+```
 
 # 分页查询
 

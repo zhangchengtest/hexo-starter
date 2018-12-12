@@ -268,7 +268,7 @@ http://localhost:8080/appWeb/api2/restaruant/save
 
 ```
 
-#商户更新
+# 商户更新
 
 ```
 请求路径：
@@ -289,6 +289,28 @@ http://localhost:8080/appWeb/api2/restaruant/update
 返回参数
 
 ```
+
+# 合作伙伴更新
+
+```
+请求路径：
+http://localhost:8080/appWeb/api2/partner/updatePartner
+
+请求参数：
+{ 
+        "id":"22222",
+        "managerName":"fefe",
+        "managerPhone":"15216771668",
+        "doorId":"293",
+        "partnerRestaurantName":"妙生鲜-正荣店”
+}
+
+
+返回参数
+
+```
+
+
 
 #店铺详情
 

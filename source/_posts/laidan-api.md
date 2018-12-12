@@ -312,7 +312,29 @@ http://localhost:8080/appWeb/api2/partner/updatePartner
 
 
 
-#店铺详情
+# 账户保存
+
+```
+请求路径：
+http://localhost:8080/appWeb/api2/bankAccount/save
+
+请求参数：
+{
+	"accountName":null,
+	"accountNo":null,
+	"bankBranch":null,
+	"bankName":null,
+	"city":null,
+	"province":null,
+	"restaurantId":null,
+}
+
+返回参数
+
+```
+
+
+# 店铺详情
 
 ```
 请求路径：

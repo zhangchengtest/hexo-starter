@@ -310,6 +310,19 @@ http://localhost:8080/appWeb/api2/partner/updatePartner
 
 ```
 
+# 财务下载
+
+```
+请求路径：
+http://localhost:8080/appWeb/api2/finance/download
+
+请求参数：
+{
+	"startDate":"2018-10-10",
+	"endDate":"2018-12-10"
+}
+
+```
 
 
 # 账户保存

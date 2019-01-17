@@ -109,6 +109,28 @@ http://localhost:8080/appWeb/api2/order/searchByPage
 }
 ```
 
+
+# 注册
+
+```
+请求路径：
+http://localhost:8080/appWeb/api/register
+
+请求参数：
+
+
+{
+    "password":"123456",
+    "phone":"15261771668",
+    "userName":"fesfe",
+    "validCode":"fesf"
+}
+
+
+返回参数：
+
+```
+
 # 未配送搜索
 
 ```

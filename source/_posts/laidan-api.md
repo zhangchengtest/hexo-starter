@@ -131,6 +131,24 @@ http://localhost:8080/appWeb/api/register
 
 ```
 
+# 发送短信
+
+```
+请求路径：
+http://localhost:8080/appWeb/api/sendValidCode
+
+请求参数：
+
+
+{
+    "password":"123456"
+}
+
+
+返回参数：
+
+```
+
 # 未配送搜索
 
 ```

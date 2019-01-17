@@ -141,7 +141,7 @@ http://localhost:8080/appWeb/api/sendValidCode
 
 
 {
-    "password":"123456"
+    "phone":"15261771668"
 }
 
 
